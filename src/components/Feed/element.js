@@ -13,18 +13,28 @@ export const FeedWrrapper = styled.View`
   height: 100%;
   justify-content: flex-end;
   margin-top: 30%;
+
   
  
   
 `;
 
 export const CardFeed = styled.View`
-border-radius: 8px;
-background: #fff;
+   border-radius: 8px;
+position: relative;
+display: flex;
 width: 300px;
-margin-bottom: 40px;
+padding-bottom: 100%;
+margin-bottom: 15px;
+margin-left: 15px;
 border-radius: 6px;
-height: 410px;
+height: 300px;
+
+`;
+
+export const Card = styled.View`
+background: #fff;
+height: 300px;
 
 `;
 
@@ -35,18 +45,23 @@ export const NameUser = styled.Text`
   margin: 5px;
 `;
 
-export const CardImg = styled.View`
-width: 100%;
-height: 320px;
-margin-top: 13px;
-background: #dedede;
+export const CardImg = styled.Image`
+     
 
 `;
+
 
 export const ProfileLink = styled.View`
 
 
 `;
+
+export const CardViewImg = styled.View`
+height: 100%;
+ 
+`;
+
+
 
 export const ImgProfile = styled.Image`
    width: 40px;

@@ -9,9 +9,12 @@ import {
   CardProfileName,
   CardImg,
   NameUser,
+  CardViewImg,
+  Card,
 
 } from "../../components/Feed/element";
 import ImagemFavicon from "../../../assets/profile.png";
+import Bruna from "../../../assets/Feed_2.jpg";
 import { ScrollView } from "react-native";
 
 export default function Login({ navigation }) {
@@ -20,15 +23,13 @@ export default function Login({ navigation }) {
   return (
    
     <FeedWrrapper>
+
       <ScrollView 
-    scrollEventThrottle={3}
-    showsVerticalScrollIndicator={false}
-    vertical
-    >
-               <CardFeed>
-       
-       
-      
+       scrollEventThrottle={3}
+       showsVerticalScrollIndicator={false}
+       vertical >
+             <CardFeed>
+               <Card>
                <CardName>
          <ProfileLink>
               <ImgProfile source={ImagemFavicon} />
@@ -37,13 +38,22 @@ export default function Login({ navigation }) {
               </CardProfileName>
               
          </ProfileLink> 
-         <CardImg>
-           
-
-         </CardImg>
+        
+         <CardImg source={Bruna}  accessibilityViewIsModal={true}  style={{
+     width: 900,
+     height: 400,
+     marginRight: 10,
+     marginBottom: 12,
+     marginTop: 12}} />
+        
+       
+     
          <NameUser>Gabriel Melo</NameUser>
          
         </CardName>
+
+               </Card>
+               
 
       
       
@@ -65,10 +75,9 @@ export default function Login({ navigation }) {
       </CardProfileName>
       
  </ProfileLink> 
- <CardImg>
-   
-
- </CardImg>
+ <CardViewImg>
+         <CardImg source={Bruna} resizeMode="stretch"/>
+         </CardViewImg>
  <NameUser>Gabriel Melo</NameUser>
  
 </CardName>
