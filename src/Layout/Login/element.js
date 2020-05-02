@@ -39,13 +39,7 @@ align-content: center;
 
 `;
 
-export const ScrollView = styled.ScrollView`
-height: auto;
-align-content: center;
-justify-content: center;
-align-items: center;
 
-`;
 
 export const SmallButton = styled.Text`
 margin-top: 4px;

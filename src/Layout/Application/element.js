@@ -30,7 +30,7 @@ export const ViewContent = styled.View`
 
 padding: 15px;
 padding-left: 4px;
-margin-left: -14%;
+margin-left: -15%;
 justify-content: center;
 
 `;
@@ -65,18 +65,17 @@ export const Img = styled.Image`
     height: 50px;
     border-radius: 50px;
     border: 2px solid #fff;
-  
-  `;
+`;
 
 export const ViewCard = styled.View`
    align-items: center;
    justify-content: center;
+   background: transparent;
    padding-left: 15px;
    padding-right: 15px;
    padding-bottom: 15px;
    margin-right: 15px;
    margin-left: -5px;
-  
   `;
 
   export const ViewWrapper = styled.View`
@@ -84,9 +83,7 @@ export const ViewCard = styled.View`
   height: 100%;
   position: relative;
   background: #fff; 
-  
-  
-  `;
+`;
 
   export const Notification = styled.View`
   padding: 20px;
@@ -95,7 +92,7 @@ export const ViewCard = styled.View`
   margin: 4px;
 
   
-  `;
+`;
 
   export const PanalAdd = styled.View`
    padding: 10px;
@@ -103,29 +100,56 @@ export const ViewCard = styled.View`
   justify-content: center;
   margin-bottom: 1%;
   
-  `;
-
-
+`;
 export const ViewStory = styled.View`
     width: 100%;
     position: absolute;
     height: 22%;
     
    
-    margin-top: 13%;
-    background: #000;
+    margin-top: 17%;
+   
 
+
+`;
+
+export const TextProfile = styled.Text`
+font-size: 14px;
+color: #000;
+color: #fff;
+font-weight: bold;
+margin-top: 15px;
+margin-left: 24%;
+margin-right: 24%;
+align-items: center;
+align-content: center;
+text-align: center;
 
 `;
 
 export const CardUser = styled.View`
-  width: 20%;
+  width: 120px;
   background: #fff;
-  margin: 25px;
+  margin: 9px;
   height: 150px;
-  border-radius: 10px;
+   border-radius: 10px;
 
 `;
+export const CardName = styled.View`
+width: 100%;
+height: 50px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+margin-top: 84%;
+align-items: flex-end;
+background: #199ED8;
+`;
 export const ViewContainer = styled.View`
+    padding-left: 10px;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
     flex: 3;
+    padding-top: 10px;
+    margin-left: 19%;
 `;

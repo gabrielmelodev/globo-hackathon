@@ -41,7 +41,6 @@ export default function Sidernav() {
 
           </ViewCard>
           <ViewCard>
-
             <Img source={Friends} />
           </ViewCard>
 
