@@ -17,12 +17,15 @@ import {
 } from "../../Layout/Login/element";
 import ImagemFavicon from "../../../assets/minhacontaglobo.jpg";
 import { Platform } from "react-native";
-
+import { setUser } from "../../storage";//remover
 export default function Login({ navigation }) {
   const [emailLogin, setEmailLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");
 
+  setUser({ name: "Renan", email: "renanwds@gmail.com", password: "123" });//remover
+  
   const navigate = (page) => navigation.navigate(page);
+  navigate("Loja");//remover
 
   const handleLogin = () => {
     if (emailLogin && passwordLogin) {

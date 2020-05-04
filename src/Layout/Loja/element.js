@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
 
-
 export const View = styled.View`
   background: #f5f5f5;
   width: 100%;
@@ -8,9 +7,97 @@ export const View = styled.View`
 `;
 
 export const TextTitle = styled.Text`
-  background: #f5f5f5;
-  width: 100%;
-  height: 100%;
+  font-size: 35px;
+`;
+
+export const Picture = styled.View`
+  padding: 10px;
+`;
+
+export const StoreHeader = styled.View`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px auto;
+`;
+
+export const Circle = styled.Image`
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: -8px;
+`;
+
+export const TextWhite = styled.Text`
+  color: #fff;
+`;
+
+export const BigTextWhite = styled.Text`
+  color: #fff;
+  font-size: 30px;
+  line-height: 45px;
+`;
+
+export const Saldo = styled.View`
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  margin: 25px auto;
+  max-width: 350px;
+`;
+
+export const SaldoKey = styled.View`
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #707070;
+  width: 50%;
+  height: 75px;
+  font-size: 18px;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+`;
+
+export const SaldoValue = styled.View`
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #fff;
+  max-width: 350px;
+  background: #9a3296;
+  width: 50%;
+  height: 75px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+`;
+
+export const Estaleca = styled.Image`
+  width: 45px;
+`;
+
+export const ProdutoCardContainer = styled.View`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+`;
+
+export const ProdutoCard = styled.View`
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  flex-wrap: wrap;
+`;
+
+export const ProdutoPicture = styled.Image`
+  width: 150px;
 `;
 
 export const StatuscNav = styled.View`
@@ -26,7 +113,7 @@ export const StatuscNav = styled.View`
 export const TextName = styled.Text`
   font-size: 20px;
   color: #000;
-  padding: 4px;
+  padding: 10px;
   text-align: center;
 `;
 
@@ -133,14 +220,6 @@ export const CardUser = styled.View`
   height: 150px;
   border-radius: 10px;
 `;
-
-export const ImageStory = styled.Image`
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  margin: -15px;
-`;
-
 export const CardName = styled.View`
   width: 100%;
   height: 50px;
