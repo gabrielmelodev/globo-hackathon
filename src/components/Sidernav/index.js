@@ -1,6 +1,6 @@
 import React from "react";
 import { StatusBar, ScrollView, Animated, Button,TouchableOpacity,Text } from "react-native";
-import Imagem from "../../../assets/profile.png";
+import Imagem from "../../../assets/avatar.png";
 import Plim from "../../../assets/plim_plim.png";
 import Friends from "../../../assets/friend.png";
 import Gift from "../../../assets/gift.png";
@@ -26,7 +26,7 @@ import {
 
 export default function Sidernav({ navigation }) {
 
-  //const navigate = (page) => navigation.navigate(page);
+  const navigate = (page) => navigation.navigate(page);
 
   return (
     <ViewWrapper>

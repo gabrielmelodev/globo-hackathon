@@ -29,7 +29,7 @@ export default function Login({ navigation }) {
       (async () => {
         const { email, password } = await getUser();
         if (email === emailLogin && password === passwordLogin) {
-          navigate("Plim");
+          navigate("Application");
         } else {
           alert("Email ou senha incorretos");
         }
