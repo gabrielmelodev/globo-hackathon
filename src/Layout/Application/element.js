@@ -118,12 +118,11 @@ export const TextProfile = styled.Text`
   color: #000;
   color: #fff;
   font-weight: bold;
-  margin-top: 15px;
-  margin-left: 24%;
-  margin-right: 24%;
-  align-items: center;
-  align-content: center;
   text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0
+  top: 50%;
 `;
 
 export const CardUser = styled.View`

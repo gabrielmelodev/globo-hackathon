@@ -65,7 +65,11 @@ export default function Application({ navigation }) {
                   resizeMode="contain"
                 />
                 <CardNameUser>
-                  <TextProfile>Seu Story</TextProfile>
+                  <TextProfile>
+                  {username.length > 15
+                      ? username.substr(0, 12) + "..."
+                      : username}
+                  </TextProfile>
                 </CardNameUser>
               </CardUser>
             ))}

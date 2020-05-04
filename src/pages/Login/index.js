@@ -25,7 +25,7 @@ export default function Login({ navigation }) {
   setUser({ name: "Renan", email: "renanwds@gmail.com", password: "123" });//remover
   
   const navigate = (page) => navigation.navigate(page);
-  navigate("Loja");//remover
+  navigate("Application");//remover
 
   const handleLogin = () => {
     if (emailLogin && passwordLogin) {
