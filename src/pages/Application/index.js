@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { StatusBar, ScrollView, Animated } from "react-native";
 import Imagem from "../../../assets/profile.png";
 import SiderNav from "../../components/Sidernav";
@@ -15,7 +15,7 @@ import {
   CardUser,
   CardName,
   CardNameUser,
-  TextProfile
+  TextProfile,
 } from "../../Layout/Application/element";
 import { getUser } from "../../storage";
 
@@ -29,73 +29,48 @@ export default function Application({ navigation }) {
   });
 
   return (
-
     <View>
       <StatusBar />
-     
+
       <StatuscNav>
         <ViewContent>
-          <Title>Ola, <TextName>{name}</TextName></Title>
+          <Title>
+            Ola, <TextName>{name}</TextName>
+          </Title>
         </ViewContent>
-
       </StatuscNav>
-      <Feed/>
       <ViewStory>
         <ViewContainer>
-          <ScrollView horizontal scrollEventThrottle={20} showsHorizontalScrollIndicator={false}>
+          <ScrollView
+            horizontal
+            scrollEventThrottle={20}
+            showsHorizontalScrollIndicator={false}
+          >
             <CardUser>
-           
               <CardName>
-              <TextProfile>Seu Story</TextProfile>
+                <TextProfile>Seu Story</TextProfile>
               </CardName>
             </CardUser>
-
             <CardUser>
-
-            <CardNameUser>
-              <TextProfile>Seu Story</TextProfile>
+              <CardNameUser>
+                <TextProfile>Seu Story</TextProfile>
               </CardNameUser>
-
             </CardUser>
             <CardUser>
-
-            <CardNameUser>
-              <TextProfile>Seu Story</TextProfile>
+              <CardNameUser>
+                <TextProfile>Seu Story</TextProfile>
               </CardNameUser>
-
             </CardUser>
             <CardUser>
-              
-            <CardNameUser>
-              <TextProfile>Seu Story</TextProfile>
+              <CardNameUser>
+                <TextProfile>Seu Story</TextProfile>
               </CardNameUser>
-
             </CardUser>
           </ScrollView>
-
         </ViewContainer>
       </ViewStory>
-     
-
-   <SiderNav/>
-     
-   
-
-
-
-
-
-
+      <Feed />
+      <SiderNav />
     </View>
-
-
-
-
-
-
-  )
+  );
 }
-
-
-
-
