@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { StatusBar, ScrollView, Animated } from "react-native";
+import { StatusBar, ScrollView, Animated, Image } from "react-native";
 import Imagem from "../../../assets/profile.png";
 import SiderNav from "../../components/Sidernav";
 import Feed from "../../pages/Feed";
-
+import Posts from "../../db/Posts";
 import {
   StatuscNav,
   View,
@@ -16,6 +16,7 @@ import {
   CardName,
   CardNameUser,
   TextProfile,
+  ImageStory,
 } from "../../Layout/Application/element";
 import { getUser } from "../../storage";
 
@@ -47,15 +48,27 @@ export default function Application({ navigation }) {
             showsHorizontalScrollIndicator={false}
           >
             <CardUser>
+              <ImageStory
+                source={require("../../../assets/feed-7.jpg")}
+                resizeMode="contain"
+              />
               <CardName>
                 <TextProfile>Seu Story</TextProfile>
               </CardName>
             </CardUser>
-            <CardUser>
-              <CardNameUser>
-                <TextProfile>Seu Story</TextProfile>
-              </CardNameUser>
-            </CardUser>
+            {Posts.map(({ filename, username }) => (
+              <CardUser key={filename}>
+                <ImageStory
+                  source={{
+                    uri: `https://raw.githubusercontent.com/RenanTKN/globo-app/master/src/images/${filename}`,
+                  }}
+                  resizeMode="contain"
+                />
+                <CardNameUser>
+                  <TextProfile>Seu Story</TextProfile>
+                </CardNameUser>
+              </CardUser>
+            ))}
             <CardUser>
               <CardNameUser>
                 <TextProfile>Seu Story</TextProfile>

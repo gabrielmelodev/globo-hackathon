@@ -4,7 +4,6 @@ export const View = styled.View`
   background: #f5f5f5;
   width: 100%;
   height: 100%;
-  
 `;
 
 export const StatuscNav = styled.View`
@@ -12,10 +11,9 @@ export const StatuscNav = styled.View`
   background: #fff;
   height: 70px;
   position: absolute;
-  box-shadow: 20px 15px 15px rgba(0,0,0,.25);
+  box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.25);
   padding-top: 4px;
   padding-bottom: 4px;
-   
 `;
 
 export const TextName = styled.Text`
@@ -23,7 +21,6 @@ export const TextName = styled.Text`
   color: #000;
   padding: 4px;
   text-align: center;
-
 `;
 
 export const ViewContent = styled.View`
@@ -31,16 +28,12 @@ export const ViewContent = styled.View`
   padding-left: 4px;
   margin-left: -15%;
   justify-content: center;
-
 `;
 
-
 export const Title = styled.Text`
-
   font-size: 20px;
   color: #000;
   text-align: center;
-
 `;
 
 export const Profile = styled.View`
@@ -52,7 +45,6 @@ export const Profile = styled.View`
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   background: #f6f6f6;
-
 `;
 
 export const Img = styled.Image`
@@ -66,34 +58,32 @@ export const Img = styled.Image`
 `;
 
 export const ViewCard = styled.View`
-   align-items: center;
-   justify-content: center;
-   background: transparent;
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-bottom: 15px;
-   margin-right: 15px;
-   margin-left: -5px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  margin-left: -5px;
 `;
 
 export const ViewWrapper = styled.View`
   width: 20%;
   height: 100%;
   position: relative;
-  background: #fff; 
+  background: #fff;
 `;
 
-
 export const ButtonImg = styled.TouchableOpacity`
- align-items: center;
-   justify-content: center;
-   background: transparent;
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-bottom: 15px;
-   margin-right: 15px;
-   margin-left: -5px;
-
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  margin-left: -5px;
 `;
 
 export const Notification = styled.View`
@@ -101,8 +91,6 @@ export const Notification = styled.View`
   align-items: center;
   justify-content: center;
   margin: 4px;
-
-  
 `;
 
 export const PanalAdd = styled.View`
@@ -110,12 +98,11 @@ export const PanalAdd = styled.View`
   align-items: center;
   justify-content: center;
   margin-bottom: 1%;
-  
 `;
 export const ViewStory = styled.View`
   width: 100%;
-  position: absolute;  
-  height: 22%; 
+  position: absolute;
+  height: 22%;
   margin-top: 17%;
 `;
 
@@ -133,40 +120,46 @@ export const TextProfile = styled.Text`
 `;
 
 export const CardUser = styled.View`
-   width: 120px;
-   background: #fff;
-   margin: 9px;
-   height: 150px;
-   border-radius: 10px;
+  width: 120px;
+  background: #fff;
+  margin: 9px;
+  height: 150px;
+  border-radius: 10px;
 `;
+
+export const ImageStory = styled.Image`
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin: -15px;
+`;
+
 export const CardName = styled.View`
-   width: 100%;
-   height: 50px;
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-   margin-top: 84%;
-   align-items: flex-end;
-   background: #199ED8;
+  width: 100%;
+  height: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 84%;
+  align-items: flex-end;
+  background: #199ed8;
 `;
 
 export const CardNameUser = styled.View`
-   width: 100%;
-   height: 50px;
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-   margin-top: 84%;
-   align-items: flex-end;
-   background: #000;
+  width: 100%;
+  height: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 84%;
+  align-items: flex-end;
+  background: #000;
 `;
 
-
-
 export const ViewContainer = styled.View`
-    padding-left: 10px;
-    flex-direction: row;
-    height: 100px;
-    width: 100%;
-    flex: 3;
-    padding-top: 10px;
-    margin-left: 19%;
+  padding-left: 10px;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  flex: 3;
+  padding-top: 10px;
+  margin-left: 19%;
 `;
