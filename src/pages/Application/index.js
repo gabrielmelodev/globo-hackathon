@@ -6,9 +6,7 @@ import Feed from "../../pages/Feed";
 
 import {
   StatuscNav,
-  Profile,
   View,
-  Img,
   Title,
   TextName,
   ViewContent,
@@ -16,11 +14,12 @@ import {
   ViewContainer,
   CardUser,
   CardName,
+  CardNameUser,
   TextProfile
 } from "../../Layout/Application/element";
 import { getUser } from "../../storage";
 
-export default function Application() {
+export default function Application({ navigation }) {
   const [name, setName] = useState("");
   useEffect(() => {
     (async () => {
@@ -43,28 +42,45 @@ export default function Application() {
       <Feed/>
       <ViewStory>
         <ViewContainer>
-          <ScrollView horizontal scrollEventThrottle={10} showsHorizontalScrollIndicator={false}>
+          <ScrollView horizontal scrollEventThrottle={20} showsHorizontalScrollIndicator={false}>
             <CardUser>
            
               <CardName>
               <TextProfile>Seu Story</TextProfile>
               </CardName>
             </CardUser>
+
             <CardUser>
+
+            <CardNameUser>
+              <TextProfile>Seu Story</TextProfile>
+              </CardNameUser>
 
             </CardUser>
             <CardUser>
 
+            <CardNameUser>
+              <TextProfile>Seu Story</TextProfile>
+              </CardNameUser>
+
             </CardUser>
             <CardUser>
+              
+            <CardNameUser>
+              <TextProfile>Seu Story</TextProfile>
+              </CardNameUser>
 
             </CardUser>
           </ScrollView>
 
         </ViewContainer>
       </ViewStory>
-      
-      <SiderNav />
+     
+
+   <SiderNav/>
+     
+   
+
 
 
 

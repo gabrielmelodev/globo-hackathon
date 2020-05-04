@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar, ScrollView,Animated } from "react-native";
+import { StatusBar, ScrollView, Animated, Button,TouchableOpacity,Text } from "react-native";
 import Imagem from "../../../assets/profile.png";
 import Plim from "../../../assets/plim_plim.png";
 import Friends from "../../../assets/friend.png";
@@ -13,100 +13,109 @@ import oGlobo from "../../../assets/o-globo.png";
 import Add from "../../../assets/plus.png";
 
 import {
-  StatuscNav,
-  Profile,
-  View,
+  
   Img,
-  Title,
-  TextName,
-  ViewContent,
-  ViewWrapper,
   Notification,
+  ViewWrapper,
   ViewCard,
   PanalAdd,
-  ViewStory,
+  ButtonImg,
 } from "../../Layout/Application/element";
 
-export default function Sidernav() {
-  
-      return (
-        <ViewWrapper>
-        <Notification>
-        <ViewCard>
-          <Img source={Imagem} />
-        </ViewCard>
-          <ViewCard>
 
+
+export default function Sidernav({ navigation }) {
+
+  //const navigate = (page) => navigation.navigate(page);
+
+  return (
+    <ViewWrapper>
+      <Notification>
+        <ButtonImg onPrees={() => navigate("Application")}>
+      
+            <Img source={Imagem} />
+         
+        </ButtonImg>
+
+        <ButtonImg onPrees={() => navigation.push("Plim")}>
+        
             <Img source={Plim} />
+         
+        </ButtonImg>
 
-          </ViewCard>
-          <ViewCard>
+        <ButtonImg>
+       
             <Img source={Friends} />
-          </ViewCard>
+          
 
-          <ViewCard>
+        </ButtonImg>
+
+        <ButtonImg>
+         
 
             <Img source={Gift} />
-          </ViewCard>
-
-        </Notification>
-
-        <ScrollView scrollEventThrottle={16} vertical={true} showsVerticalScrollIndicator={false}>
          
-          <ViewCard>
+        </ButtonImg>
 
-            <Img source={GloboPlay} />
 
-          </ViewCard>
+      </Notification>
 
-          <ViewCard>
+      <ScrollView scrollEventThrottle={16} vertical={true} showsVerticalScrollIndicator={false}>
 
-            <Img source={Globo} />
-          </ViewCard>
+        <ViewCard>
 
-          <ViewCard>
+          <Img source={GloboPlay} />
 
-            <Img source={GShow} />
-          </ViewCard>
+        </ViewCard>
 
-          <ViewCard>
+        <ViewCard>
 
-            <Img source={G1} />
+          <Img source={Globo} />
+        </ViewCard>
 
-          </ViewCard>
-          <ViewCard>
+        <ViewCard>
 
-            <Img source={oGlobo} />
-          </ViewCard>
+          <Img source={GShow} />
+        </ViewCard>
 
-          <ViewCard>
+        <ViewCard>
 
-            <Img source={GE} />
-          </ViewCard>
+          <Img source={G1} />
 
-        </ScrollView>
+        </ViewCard>
+        <ViewCard>
 
-        <PanalAdd>
+          <Img source={oGlobo} />
+        </ViewCard>
+
+        <ViewCard>
+
+          <Img source={GE} />
+        </ViewCard>
+
+      </ScrollView>
+
+      <PanalAdd>
 
         <ViewCard>
 
           <Img source={Add} />
 
-           </ViewCard>
+        </ViewCard>
 
-        </PanalAdd>
+      </PanalAdd>
 
-      </ViewWrapper>
+    </ViewWrapper>
 
-    
-    
-    
-    
-    
-    
-      )
-    }
-    
+
+
+
+
+
+
+  )
+}
+
 
 
 

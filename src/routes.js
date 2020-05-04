@@ -5,14 +5,15 @@ import { createStackNavigator } from "react-navigation-stack";
 import Application from './pages/Application';
 import Login from './pages/Login';
 import Register from "./pages/Register";
-import Notification from './pages/Notification';
+//import Notification from './pages/Notification';
+import Plim from "./pages/Plim";
 
 const Routes  = createAppContainer(
    createSwitchNavigator({
      Login,
-     Application,
      Register,
-     Notification,
+     Application,
+     Plim,
    })
 );
 

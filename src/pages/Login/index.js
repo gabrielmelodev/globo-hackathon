@@ -29,7 +29,7 @@ export default function Login({ navigation }) {
       (async () => {
         const { email, password } = await getUser();
         if (email === emailLogin && password === passwordLogin) {
-          navigate("Application");
+          navigate("Plim");
         } else {
           alert("Email ou senha incorretos");
         }
@@ -52,7 +52,7 @@ export default function Login({ navigation }) {
           keyboardType="email-address"
           autoCapitalize="none"
           placeholder="Digite seu email"
-          alue={emailLogin}
+          value={emailLogin}
           onChangeText={(e) => setEmailLogin(e)}
         />
 
