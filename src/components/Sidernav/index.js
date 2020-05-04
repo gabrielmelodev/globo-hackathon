@@ -27,6 +27,7 @@ import {
 export default function Sidernav({ navigation }) {
 
   const navigate = (page) => navigation.navigate(page);
+  console.log(navigation);
 
   return (
     <ViewWrapper>
@@ -50,7 +51,7 @@ export default function Sidernav({ navigation }) {
 
         </ButtonImg>
 
-        <ButtonImg>
+        <ButtonImg  onPress={() => navigate('Loja')}>
          
 
             <Img source={Gift} />

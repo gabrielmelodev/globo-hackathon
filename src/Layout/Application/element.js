@@ -1,10 +1,17 @@
 import styled from "styled-components/native";
 
+
 export const View = styled.View`
   background: #f5f5f5;
   width: 100%;
   height: 100%;
   
+`;
+
+export const TextTitle = styled.Text`
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
 `;
 
 export const StatuscNav = styled.View`
