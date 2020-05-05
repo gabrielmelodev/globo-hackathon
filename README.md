@@ -6,7 +6,7 @@ Este projeto foi feito para o hackathon megahack da Shawee. Ele conta com cadast
 
 # Desenvovimento 
 
-O Projeto foi utilizado [React Native](https://reactnative.dev/) com [Expo](https://expo.io/learn) 
+O Projeto foi utilizado [React Native](https://reactnative.dev/) com [Expo](https://expo.io/) 
 
 ### Armazenamento
 
@@ -22,7 +22,7 @@ O sistema possibilita agregar funcionalidades dos aplicativos globo em um único
 
 ## Sistema de Interface Web
 
-Desenvolvemos um sistema web . [Clique aqui](https://github.com/RenanTKN/globo-app) para acssar o repositório com o código.
+Desenvolvemos um sistema web. [Clique aqui](https://github.com/RenanTKN/globo-app) para acssar o repositório com o código.
 
 ## Acessar o Aplicativo
 
@@ -30,4 +30,4 @@ Para acessar o sistema você precisa se cadastrar e em seguida fazer login.
 
 Sugerimos usar uma senha simples (como 123 por exemplo), pois ela será salva localmente e este sistema é apenas uma versão de demonstração.
 
-Teste o sistema clicando neste link: [Meu Globo](https://expo.io/learn).
+Teste o sistema clicando neste link: [Meu Globo](https://expo.io/@gabrielmelodev/frontend).
