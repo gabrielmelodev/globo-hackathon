@@ -1,8 +1,10 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { StatusBar, ScrollView, Animated } from "react-native";
+import {withNavigation} from "react-navigation";
 import Imagem from "../../../assets/profile.png";
 import SiderNav from "../../components/Sidernav";
 import Feed from "../../pages/Feed";
+import Story from "../../pages/Story";
 
 import {
   StatuscNav,
@@ -15,11 +17,24 @@ import {
   CardUser,
   CardName,
   CardNameUser,
-  TextProfile
+  TextProfile,
+  Img,
+  Notification,
+  ViewWrapper,
+  ViewCard,
+  PanalAdd,
+  ButtonImg,
+  ImageStory,
 } from "../../Layout/Application/element";
+import Posts from "../../db/Posts";
 import { getUser } from "../../storage";
 
-export default function Application({ navigation }) {
+function Application({ navigation }) {
+
+  function handleNavigation() {
+    navigation.navigate('Convite');
+  }
+  
   const [name, setName] = useState("");
   useEffect(() => {
     (async () => {
@@ -29,73 +44,27 @@ export default function Application({ navigation }) {
   });
 
   return (
-
     <View>
       <StatusBar />
-     
+
       <StatuscNav>
         <ViewContent>
-          <Title>Ola, <TextName>{name}</TextName></Title>
+          <Title>
+            Ola, <TextName>{name}</TextName>
+          </Title>
         </ViewContent>
-
       </StatuscNav>
-      <Feed/>
-      <ViewStory>
-        <ViewContainer>
-          <ScrollView horizontal scrollEventThrottle={20} showsHorizontalScrollIndicator={false}>
-            <CardUser>
-           
-              <CardName>
-              <TextProfile>Seu Story</TextProfile>
-              </CardName>
-            </CardUser>
-
-            <CardUser>
-
-            <CardNameUser>
-              <TextProfile>Seu Story</TextProfile>
-              </CardNameUser>
-
-            </CardUser>
-            <CardUser>
-
-            <CardNameUser>
-              <TextProfile>Seu Story</TextProfile>
-              </CardNameUser>
-
-            </CardUser>
-            <CardUser>
-              
-            <CardNameUser>
-              <TextProfile>Seu Story</TextProfile>
-              </CardNameUser>
-
-            </CardUser>
-          </ScrollView>
-
-        </ViewContainer>
-      </ViewStory>
-     
-
-   <SiderNav/>
-     
    
+     <Story/>
 
 
+      <Feed/>
 
-
-
-
+      
+    <SiderNav/>
+     
     </View>
-
-
-
-
-
-
-  )
+  );
 }
 
-
-
-
+export default withNavigation(Application);

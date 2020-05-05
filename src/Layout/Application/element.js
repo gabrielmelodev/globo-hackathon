@@ -18,6 +18,13 @@ export const StatuscNav = styled.View`
    
 `;
 
+export const ImageStory = styled.Image`
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin: -15px;
+`;
+
 export const TextName = styled.Text`
   font-size: 20px;
   color: #000;

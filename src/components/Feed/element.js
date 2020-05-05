@@ -96,7 +96,6 @@ export const ImgProfileAction = styled.Image`
 width: 20px;
 height: 20px;
 margin-right: -8px;
-
 border-radius: 50px;
 
 `;
@@ -144,8 +143,9 @@ export const CardViewImg = styled.View`
 export const ImgProfile = styled.Image`
    width: 40px;
    padding: 10px;
-   margin-left: 30px;
-   margin: 5px;
+   margin-left: 14px;
+
+   margin-top: 14px;
    align-items: center;
    height: 40px;
 `;
@@ -175,7 +175,7 @@ export const TextProfile = styled.Text`
 
 export const CardProfileName = styled.View`
    align-items: center;
-   margin-top: -35px;
-   margin-left: 20%;
+   margin-top: -30px;
+   margin-left: 22%;
    flex-direction: row;
 `;

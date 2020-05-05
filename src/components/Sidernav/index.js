@@ -1,6 +1,7 @@
 import React from "react";
+import {withNavigation} from "react-navigation";
 import { StatusBar, ScrollView, Animated, Button,TouchableOpacity,Text } from "react-native";
-import Imagem from "../../../assets/profile.png";
+import Imagem from "../../../assets/avatar.png";
 import Plim from "../../../assets/plim_plim.png";
 import Friends from "../../../assets/friend.png";
 import Gift from "../../../assets/gift.png";
@@ -12,8 +13,7 @@ import G1 from "../../../assets/g1.png";
 import oGlobo from "../../../assets/o-globo.png";
 import Add from "../../../assets/plus.png";
 
-import {
-  
+import { 
   Img,
   Notification,
   ViewWrapper,
@@ -22,37 +22,32 @@ import {
   ButtonImg,
 } from "../../Layout/Application/element";
 
-
-
-export default function Sidernav({ navigation }) {
-
-  //const navigate = (page) => navigation.navigate(page);
-
+function Sidernav({navigation}) {
+  const navigate = (page) => navigation.navigate(page);
+ 
+console.log(navigation);
   return (
     <ViewWrapper>
       <Notification>
-        <ButtonImg onPrees={() => navigate("Application")}>
-      
+
+        <ButtonImg onPress={() => navigate('Application')}>
+
             <Img source={Imagem} />
-         
+
         </ButtonImg>
 
-        <ButtonImg onPrees={() => navigation.push("Plim")}>
-        
+        <ButtonImg>  
             <Img source={Plim} />
-         
         </ButtonImg>
 
-        <ButtonImg>
+        <ButtonImg onPress={() => navigate('Convite')}>
        
-            <Img source={Friends} />
+            <Img source={Friends}  />
           
-
         </ButtonImg>
 
-        <ButtonImg>
+        <ButtonImg onPress={() => navigate('Store')}>
          
-
             <Img source={Gift} />
          
         </ButtonImg>
@@ -107,14 +102,9 @@ export default function Sidernav({ navigation }) {
 
     </ViewWrapper>
 
-
-
-
-
-
-
   )
 }
+export default withNavigation(Sidernav);
 
 
 

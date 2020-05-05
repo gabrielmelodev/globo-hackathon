@@ -12,20 +12,19 @@ import {
   CardOutros,
   TitleH1,
   ViewDivide,
- } from "../../Layout/Plim/element";
+ } from "./element";
+
 import Estaleca from "../../../assets/estaleca.png";
 import Email from "../../../assets/email_black.png";
 import Mensagem from "../../../assets/speaker_notes.png";
 import Outros from "../../../assets/menu.png";
 import Whatsapp from "../../../assets/whatsapp.png";
 import SiderNav from "../../components/Sidernav";
-export default function Plim({navigation}) {
+export default function Convite() {
   return(
   <>
-  <StatusBar/>
-      <SiderNav/>
+  <StatusBar/>    
       <View>
-    
       <CardInfo>
       <ImgEsta source={Estaleca} />
       <Title>Convide seus amigos e junte estalecas :)</Title> 
@@ -50,12 +49,9 @@ export default function Plim({navigation}) {
       <CardOutros>
       <ImgIcon source={Outros}/>
       <TitleH1>Outros</TitleH1>
-      </CardOutros>
-    
-      
-     
+      </CardOutros>  
     </View>
-   
+    <SiderNav/>
     </>
       
 
