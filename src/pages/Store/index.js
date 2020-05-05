@@ -16,6 +16,7 @@ import {
   SaldoValue,
   Estaleca,
   ProdutoCardContainer,
+  TextEstaleca,
   ProdutoCard,
   ProdutoPicture,
   StatuscNav,
@@ -45,63 +46,53 @@ export default function Application({ navigation }) {
 
   return (
     <>
-    <View>
-      
-      
-      <StatusBar />
-      <StatuscNav>
-     
-        <ViewContent>
-          <Title>
-            Ola, <TextName>{name}</TextName>
-          </Title>
-        </ViewContent>
-      </StatuscNav>
-
       <View>
-          
-        <StoreHeader>
-          <Picture>
-            <Circle source={require("../../../assets/circle.png")} />
-            <Image source={require("../../../assets/avatar.png")} />
-          </Picture>
-          <TextName>
-            Oi, {name}, você é{"\n"}
-            <TextTitle>Globo Gold</TextTitle>
-          </TextName>
-        </StoreHeader>
-        <Saldo>
-          <SaldoKey>
-            <TextWhite>Seu saldo de estalecas é de</TextWhite>
-          </SaldoKey>
-          <SaldoValue>
-            <BigTextWhite>
-              {Math.floor(Math.random() * 10000) * 10}
-            </BigTextWhite>
-            <Estaleca
-              source={require("../../../assets/estaleca.png")}
-              resizeMode="contain"
-            />
-          </SaldoValue>
-        </Saldo>
-        <TextNameH1>
-          Troque suas estalecas por produtos ou experiências Globo
-        </TextNameH1>
-        <ProdutoCardContainer>
-          <ProdutoCard>
-            <ProdutoPicture
-              source={require("../../../assets/capa-loja02.png")}
-              resizeMode="contain"
-            />
-            <View>
-              <Text>Live com Deborah Secco</Text>
-            </View>
-          </ProdutoCard>
-        </ProdutoCardContainer>
-        
+        <StatusBar />
+        <StatuscNav>
+          <ViewContent>
+            <Title>
+              Ola, <TextName>{name}</TextName>
+            </Title>
+          </ViewContent>
+        </StatuscNav>
+
+        <View>
+          <StoreHeader>
+            <Picture>
+              <Circle source={require("../../../assets/circle.png")} />
+              <Image source={require("../../../assets/avatar.png")} />
+            </Picture>
+            <TextName>
+              Oi, {name}, você é{"\n"}
+              <TextTitle>Globo Gold</TextTitle>
+            </TextName>
+          </StoreHeader>
+          <Saldo>
+            <SaldoKey>
+              <TextWhite>Seu saldo de estalecas é de</TextWhite>
+            </SaldoKey>
+            <SaldoValue>
+              <BigTextWhite>
+                {Math.floor(Math.random() * 10000) * 10}
+              </BigTextWhite>
+              <Estaleca
+                source={require("../../../assets/estaleca.png")}
+                resizeMode="contain"
+              />
+            </SaldoValue>
+          </Saldo>
+          <TextEstaleca>
+            Troque suas estalecas por produtos ou experiências Globo
+          </TextEstaleca>
+          <ProdutoCardContainer>
+            <Image source={require("../../../assets/foto-loja-1.png")} />
+            <Image source={require("../../../assets/foto-loja-2.png")} />
+            <Image source={require("../../../assets/foto-loja-3.png")} />
+            <Image source={require("../../../assets/foto-loja-4.png")} />
+          </ProdutoCardContainer>
+        </View>
       </View>
-    </View>
-    <SiderNav />
+      <SiderNav />
     </>
   );
 }
