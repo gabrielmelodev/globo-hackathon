@@ -1,21 +1,20 @@
 import styled from "styled-components/native";
 
 export const View = styled.View`
- width: 90%;
- 
- display: flex;
- align-items: flex-end;
- position: absolute;
-flex: 1 1;
- padding: 14px;
- height: 100%;
+  width: 90%;
+
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  flex: 1 1;
+  padding: 14px;
+  height: 100%;
 `;
 
 export const TextTitle = styled.Text`
   font-size: 28px;
   margin-left: 50px;
 `;
-
 
 export const Picture = styled.View`
   padding: 10px;
@@ -82,7 +81,7 @@ export const SaldoValue = styled.View`
   max-width: 350px;
   background: #9a3296;
   width: 50%;
-  height: 75px;  
+  height: 75px;
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
 `;
@@ -100,12 +99,18 @@ export const TextNameH1 = styled.Text`
   text-align: center;
 `;
 
-export const ProdutoCardContainer = styled.View`
+export const TextEstaleca = styled.Text`
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+  text-align: center;
+`;
+
+export const ProdutoCardContainer = styled.ScrollView`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   flex: 1;
-  justify-content: center;
 `;
 
 export const ProdutoCard = styled.View`
