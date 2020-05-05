@@ -19,8 +19,8 @@ import ImagemFavicon from "../../../assets/minhacontaglobo.jpg";
 import { Platform } from "react-native";
 
 export default function Login({ navigation }) {
-  const [emailLogin, setEmailLogin] = useState("renanwds@gmail.com");
-  const [passwordLogin, setPasswordLogin] = useState("123");
+  const [emailLogin, setEmailLogin] = useState("");
+  const [passwordLogin, setPasswordLogin] = useState("");
 
   const navigate = (page) => navigation.navigate(page);
 
